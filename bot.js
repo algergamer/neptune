@@ -13,7 +13,7 @@ const prefix = '*'
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(` *help || Neptune,`,"https://www.twitch.tv/idk")
+  client.user.setGame(` *help || Neptune BY: MARIAM,`,"https://www.twitch.tv/idk")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -55,9 +55,9 @@ client.on('message', msg => {
       if (!msg.mentions.members.first()) return msg.reply('منشن الشخص المحدد')
       if (!args[0]) return msg.reply('اكتب السبب')
       //غير اسم الروم او سوي روم بذا الاسم 
-      if (msg.guild.channels.find('name', 'warns')) {
+      if (msg.guild.channels.find('name', 'warn')) {
         //اذا غيرت فوق غير هنا كمان 
-        msg.guild.channels.find('name', 'warns').send(`
+        msg.guild.channels.find('name', 'warn').send(`
       تم اعطائك انذار : ${msg.mentions.members.first()}
       لأنك قمت بما يلي
       ${args.join(" ").split(msg.mentions.members.first()).slice(' ')}
