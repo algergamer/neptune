@@ -13,7 +13,7 @@ const prefix = '*'
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(` *help || Neptune BY: MARIAM,`,"https://www.twitch.tv/idk")
+  client.user.setGame(` *help || DRB BY: MARIAM,`,"https://www.twitch.tv/idk")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -311,7 +311,7 @@ client.on('guildMemberAdd', Sal => { //By Salto7#4595
     .addField(' 👤  انت رقم',`**[ ${Sal.guild.memberCount} ]**`,true)
     .setColor('RANDOM')
     .setFooter(Sal.guild.name, Sal.guild.iconURL, true)
-    var channel =Sal.guild.channels.find('name', 'neptune') // هنا حط اسم الروم الي تبيه يكتب فيه
+    var channel =Sal.guild.channels.find('name', 'chat') // هنا حط اسم الروم الي تبيه يكتب فيه
     if (!channel) return;
     channel.send({embed : embed});
     });  
@@ -2046,7 +2046,7 @@ if (message.mentions.users.size < 1) return message.reply("**منشن الشخص
  
 client.on("ready", () => {
  function arabecodes() {
-   client.guilds.get('503179541468938250').roles.find("name", "Neptune").setColor("RANDOM");
+   client.guilds.get('503179541468938250').roles.find("name", "MARIAM").setColor("RANDOM");
  }
  setInterval(arabecodes, 1700);
 })
