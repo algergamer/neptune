@@ -13,7 +13,7 @@ const prefix = '*'
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(` *help || DRB BY: MARIAM,`,"https://www.twitch.tv/idk")
+  client.user.setGame(` *help || DRB_THE_BEST BY: MARIAM,`,"https://www.twitch.tv/idk")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
